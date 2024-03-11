@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <!-- Form title -->
+            <h1>Contact</h1>
+            <!-- Form with onsubmit attribute calling submitForm() function -->
+            <form onsubmit="submitForm(event)">
+      
+              <div class="txt_field">
+                <!-- Input field for Full Name -->
+                <input type="text" name="name" id="name">
+                <span></span>
+                <label>Full Name</label>
+              </div>
+      
+              <div class="txt_field">
+                  <!-- Input field for Email -->
+                  <input type="text" name="email" id="email">
+                  <span></span>
+                  <label>Email</label>
+              </div>
+      
+              <div class="txt_field">
+                <!-- Input field for Message -->
+                <input type="text" name="message" id="message">
+                <span></span>
+                <label>Message</label>
+              </div>
+              <!-- Submit button -->
+              <button type="submit">Submit</button>
+              <!-- Link to Home page -->
+              <div class="homePage_link">
+              <a href="#">Back to Home page</a>
+              </div>
+      
+            </form>
+          </div>
+        
+        <!-- Popup message container -->
+        <div class="popup" id="popup">
+            <!-- Image in the popup -->
+            <img src="images/tick.jpeg">
+            <!-- Popup message -->
+            <h2>Thank You!</h2>
+            <p> Your details have been successfully submitted. Thanks!</p>
+            <!-- OK button to close the popup -->
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
